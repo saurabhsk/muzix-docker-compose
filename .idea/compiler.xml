@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="config-server" />
+        <module name="EurekaServer" />
+        <module name="muzixApp-service" />
+        <module name="spring-boot-zulugatewayproxy" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="config-server" target="11" />
+      <module name="EurekaServer" target="11" />
+      <module name="microservice-demo" target="11" />
+      <module name="muzixApp-service" target="11" />
+      <module name="spring-boot-zulugatewayproxy" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="EurekaServer" options="-parameters" />
+      <module name="config-server" options="-parameters" />
+      <module name="muzixApp-service" options="-parameters" />
+      <module name="spring-boot-zulugatewayproxy" options="-parameters" />
+    </option>
+  </component>
+</project>
